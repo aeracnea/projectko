@@ -1,0 +1,277 @@
+/*--font import --*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+/*--body setting --*/
+body
+{
+  overflow-x: hidden; 	/*--to remove scroll bar sa baba --*/
+  font-family:  		/*--font type --*/
+  color:red;			/*--color --*/
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*--navbar --*/
+.navbar 
+{
+  text-transform: uppercase; 
+  font-weight: 400; 
+  font-size: .9rem; 
+  background: rgba(0,0,0,.4)!important;
+}
+
+.navbar-brand img
+{
+  height: 6rem;
+  padding-left: 4rem;
+}
+  /*--navbar item padding --*/
+.navbar-nav li
+{
+  padding-right: .1rem;
+}
+/*--navbar List item setting --*/
+.navbar-dark .navbar-nav .nav-link 
+{
+  color:white;
+  padding-top: 0.8rem;
+  text-shadow: .1rem .1rem .8rem black;
+}
+
+  /*--hover color to item in navbar --*/
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover
+{
+  color: red;
+  border-bottom: 2px solid white;
+  font-weight: 800;
+}
+.active 
+{
+   font-weight: 1000;
+}
+
+/*--scrooll color change --*/
+.bg-transparent 
+{
+	background:transparent !important;
+	transition:0.75s ease;
+}
+.bg-transparent.scrolled
+{
+	background:rgba(0,0,0,.8) !important;
+}
+/*--slider --*/
+
+
+/*--carousel item height in screen --*/
+.carousel-item
+{
+  height: 100vh;
+ 
+}
+
+ /*--distance of element to top --*/
+.carousel-caption
+{
+	position: absolute;
+	top:30%;
+	text-transform: uppercase;
+	/*--to center item in the middle --*/
+	width: 100%;
+	left: 0; 
+	right: 0;
+}
+.carousel-caption h1
+{
+	font-size: 3.0rem;
+	font-weight: 700;
+	letter-spacing: .3rem;
+	text-shadow: .1rem .1rem .8rem black;
+	padding-bottom: 1rem;
+}
+
+.carousel-caption h3
+{
+	font-size: 1.5rem;
+	font-weight: 200;
+	letter-spacing: .3rem;
+	text-shadow: .1rem .1rem .8rem black;
+}
+
+/*============= COURSE SECTION =============*/
+
+.narrow {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.btn-md {
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.1rem;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+/*============= San juan official SECTION =============*/
+.jumbotron
+{
+	border-radius: 0;
+	padding: 6rem 0 2rem;  /*--paddling of element to container --*/
+}
+h3.heading
+{
+	font-size: 1.9rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding-bottom: 0;
+	color:#fd7e14;
+}
+.heading-underline
+{
+	width: 30%;
+	height: .2rem;
+	background-color: red;
+	margin: 0 auto 2rem;  /*-- margin to center item in the middle --*/
+}
+.portfolio img
+{
+ max-width: 100%;
+ transition: transform .5s ease;
+}
+.portfolio img:hover
+{
+	transform: scale(1.1);
+}
+.portfolio
+{
+	overflow: hidden;
+}
+
+.padding
+{
+	padding: 2rem;
+}
+
+/*============= Footer SECTION =============*/
+
+
+.page-footer
+{
+	background-color: #9cceba;
+}
+
+
+
+
+
+
+
+
+/*============= no padding container=============*/
+.row.no-padding [class*=col-]
+{
+ padding: 0;
+}
+
+
+
+
+@media (max-width: 767px)
+{
+
+
+/*--navbar --*/
+.navbar
+{
+  background: rgba(0,0,0,.4) !important;
+}
+.navbar-nav
+{
+	text-align: center;
+}
+/*--navbar li color when screen is xs --*/
+.navbar-nav.ml-auto
+{
+	background: red;
+}
+.navbar-brand img
+{
+  height: 4rem;
+  padding-left: 0;
+}
+  /*--navbar item padding --*/
+.navbar-nav li
+{
+  padding-right: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover
+{
+  color: black;
+  border-bottom: 1px solid white;
+  font-weight: 1000;
+}
+
+
+.carousel-item
+{
+  height: 60vh;
+}
+.carousel-caption
+{
+	position: absolute;
+	top:30%;
+	text-transform: uppercase;
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+.carousel-caption h1
+{
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+
+.carousel-caption h3
+{
+	font-size: 1rem;
+	font-weight: 700;
+	color: red;
+}
+.btn
+{
+	display: none;
+}
+
+.padding
+{
+	padding: 1rem;
+}
+
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
